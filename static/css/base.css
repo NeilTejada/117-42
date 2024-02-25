@@ -1,0 +1,39 @@
+/* CSS Variables - Colors */
+:root {
+    --surface-color: #252525;
+    --background-color: #1B1B1B;
+
+    --primary-color: #af9fff;
+    --secondary-color: #025834;
+
+    --neutral-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--neutral-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

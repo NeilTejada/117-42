@@ -1,17 +1,28 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock title %}</title>
+
+    <link rel="stylesheet" href="{% static './css/base.css' %}">
+    <link rel="stylesheet" href="{% static './css/header.css' %}">
+    <link rel="stylesheet" href="{% static './css/footer.css' %}">
+    <link rel="stylesheet" href="{% static './css/pages.css' %}">
   </head>
   <body>
-    <h2>My header here</h2>
+    <header class="center">
+      <h2>My header here</h2>
+    </header>
 
     {% block content %} 
     
     {% endblock content %}
 
-    <h2>My footer here</h2>
+    <footer>
+      <h2>My footer here</h2>
+    </footer>
   </body>
 </html>
