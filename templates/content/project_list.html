@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %} Projects {% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="project-section center-column">
+    <h2>Projects</h2>
+
+    <div class="project-list">
+      <!-- All project cards -->
+
+      <!-- Card One -->
+      <div class="project-card">
+        <a href="https://github.com/NeilTejada/salsa-merchReact" target="_blank">
+          <img src="{% static './img/github.jpg' %}">
+          <p>Salsa & Merchandise Project</p>
+          <p>This project shows a users an example of a small online store. Selling homeade sasla and merchandise. 
+          </p>
+          <p>2023</p>
+          <div class="skill-container center-row">
+            <label class="label-text">javascript</label>
+            <label class="label-text">React</label>
+            <label class="label-text">html</label>
+            <label class="label-text">css</label>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card Two -->
+      <div class="project-card">
+        <a href="https://github.com/NeilTejada/blog" target="_blank">
+          <img src="{% static './img/github.jpg' %}">
+          <p>Blog Project</p>
+          <p>This project allows a user to login and they can post, edit, and delete a blog.
+          </p>
+          <p>2024</p>
+          <div class="skill-container center-row">
+            <label class="label-text">Python</label>
+            <label class="label-text">sqlite 3</label>
+            <label class="label-text">html</label>
+            <label class="label-text">css</label>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card Three-->
+      <div class="project-card">
+        <a href="https://github.com/NeilTejada/petSalon" target="_blank">
+          <img src="{% static './img/github.jpg' %}">
+          <p>Pet Salon Project</p>
+          <p>This project shows basic styling using HTML and CSS.
+          </p>
+          <p>2023</p>
+          <div class="skill-container center-row">
+            <label class="label-text">html</label>
+            <label class="label-text">css</label>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+{% endblock content %}
