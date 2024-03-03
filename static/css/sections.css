@@ -56,6 +56,13 @@
   margin-top: 2rem;
 }
 
+.add-project-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1% 2%;
+}
+
 .project-card:hover {
   opacity: 0.5;
   border: 1px solid var(--secondary-color);
@@ -88,7 +95,7 @@ a p:nth-child(4) {
 }
 
 /* Contact */
-#emailForm {
+#emailForm, #projectForm {
   display: flex;
   flex-direction: column;
   height: 35rem;

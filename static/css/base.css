@@ -90,7 +90,7 @@ p {
   background-color: var(--primary-color-300);
   color: var(--neutral-color);
   border: none;
-  padding: 2.5% 5%;
+  padding: 1% 5%;
   border-radius: 1rem;
 }
 

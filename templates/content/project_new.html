@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} New Project {% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<sectioin class="new-project-section center-column">
+    <h2>New Project</h2>
+
+    <form id="projectForm" method="post" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        {{ form.name }}
+        {{ form.description }}
+        {{ form.year }}
+        {{ form.image }}
+        {{ form.repository }}
+        {{ form.skill }}
+
+        <button type="submit" class="primary-button">Save Project</button>
+        <button type="reset" class="primary-button">Reset Form</button>
+    </form>
+   
+</sectioin>
+
+{% endblock content %}

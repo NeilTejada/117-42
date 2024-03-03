@@ -12,7 +12,7 @@ class Skill(models.Model):
 
 class Project(models.Model):
     name = models.CharField(max_length=225)
-    descrtiption = models.TextField()
+    description = models.TextField()
     year = models.IntegerField()
     image = models.ImageField(upload_to='static/img/')
     repository = models.URLField()
